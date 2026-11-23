@@ -1,0 +1,82 @@
+[
+  {
+    "id": "txn_001",
+    "categoryId": "cat_salary",
+    "transactionType": "income",
+    "name": "Monthly salary",
+    "occurredAt": "2026-10-01T09:00:00.000Z",
+    "amount": 4200.00
+  },
+  {
+    "id": "txn_002",
+    "categoryId": "cat_freelance",
+    "transactionType": "income",
+    "name": "Freelance design work",
+    "occurredAt": "2026-10-08T14:30:00.000Z",
+    "amount": 650.00
+  },
+  {
+    "id": "txn_003",
+    "categoryId": "cat_groceries",
+    "transactionType": "expense",
+    "name": "Whole Foods groceries",
+    "occurredAt": "2026-10-03T18:12:00.000Z",
+    "amount": 86.47
+  },
+  {
+    "id": "txn_004",
+    "categoryId": "cat_rent",
+    "transactionType": "expense",
+    "name": "October rent",
+    "occurredAt": "2026-10-01T08:00:00.000Z",
+    "amount": 1850.00
+  },
+  {
+    "id": "txn_005",
+    "categoryId": "cat_transport",
+    "transactionType": "expense",
+    "name": "Uber to office",
+    "occurredAt": "2026-10-05T08:41:00.000Z",
+    "amount": 18.20
+  },
+  {
+    "id": "txn_006",
+    "categoryId": "cat_dining",
+    "transactionType": "expense",
+    "name": "Dinner with friends",
+    "occurredAt": "2026-10-10T20:15:00.000Z",
+    "amount": 54.90
+  },
+  {
+    "id": "txn_007",
+    "categoryId": "cat_utilities",
+    "transactionType": "expense",
+    "name": "Electric bill",
+    "occurredAt": "2026-10-06T11:00:00.000Z",
+    "amount": 92.15
+  },
+  {
+    "id": "txn_008",
+    "categoryId": "cat_entertainment",
+    "transactionType": "expense",
+    "name": "Netflix subscription",
+    "occurredAt": "2026-10-04T00:00:00.000Z",
+    "amount": 15.49
+  },
+  {
+    "id": "txn_009",
+    "categoryId": "cat_groceries",
+    "transactionType": "expense",
+    "name": "Trader Joe's",
+    "occurredAt": "2026-10-12T16:45:00.000Z",
+    "amount": 41.33
+  },
+  {
+    "id": "txn_010",
+    "categoryId": "cat_health",
+    "transactionType": "expense",
+    "name": "Pharmacy",
+    "occurredAt": "2026-10-11T13:20:00.000Z",
+    "amount": 27.80
+  }
+]
