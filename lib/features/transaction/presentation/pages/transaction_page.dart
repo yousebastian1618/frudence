@@ -1,14 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:frudence/core/constants/time_constants.dart';
 import 'package:frudence/core/utils/constants/date_time_constants.dart';
 import 'package:frudence/core/utils/formatter.dart';
 import 'package:frudence/core/utils/list_utils.dart';
+import 'package:frudence/core/widgets/horizontal_scroll.dart';
 import 'package:frudence/features/transaction/data/dummy/sample_transactions.dart';
 import 'package:frudence/features/transaction/domain/entities/transaction.dart';
-import 'package:frudence/features/transaction/presentation/pages/transaction_balance_header.dart';
+import 'package:frudence/features/transaction/presentation/widgets/transaction_balance_header.dart';
 import 'package:frudence/features/transaction/presentation/widgets/transaction_box.dart';
 
-class TransactionPage extends StatelessWidget {
-  const TransactionPage({super.key});
+class TransactionPage extends StatefulWidget {
+  const TransactionPage({
+    super.key
+  });
+
+  @override
+  State<TransactionPage> createState() => _TransactionPageState();
+}
+
+class _TransactionPageState extends State<TransactionPage> {
+  String? _selectedMonth;
 
   @override
   Widget build(BuildContext context) {
@@ -38,6 +49,28 @@ class TransactionPage extends StatelessWidget {
       child: SafeArea(
         child: Column(
           children: [
+            HorizontalScroll(
+              spacing: 48,
+              verticalPadding: 16,
+              children: [
+                for (final month in MONTHS)
+                  Semantics(
+                    selected: _selectedMonth == month,
+                    button: true,
+                    child: InkWell(
+                      onTap: () => setState(() => _selectedMonth = month),
+                      child: Text(
+                        month,
+                        style: TextStyle(
+                          fontWeight: _selectedMonth == month
+                            ? FontWeight.bold
+                            : FontWeight.normal
+                        )
+                      )
+                    )
+                  )
+              ]
+            ),
             TransactionBalanceHeader(expense: totalExpense, income: totalIncome),
             Expanded(
               child: ListView.builder(

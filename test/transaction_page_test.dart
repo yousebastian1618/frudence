@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:frudence/app/app.dart';
 import 'package:frudence/app/router/app_router.dart';
 import 'package:frudence/app/theme/app_theme.dart';
-import 'package:frudence/features/transaction/presentation/pages/transaction_balance_header.dart';
+import 'package:frudence/features/transaction/presentation/widgets/transaction_balance_header.dart';
 import 'package:frudence/features/transaction/presentation/pages/transaction_page.dart';
 import 'package:frudence/features/transaction/presentation/widgets/transaction_box.dart';
 
