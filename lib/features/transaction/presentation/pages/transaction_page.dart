@@ -52,9 +52,9 @@ class _TransactionPageState extends State<TransactionPage> {
             HorizontalScroll(
               spacing: 48,
               verticalPadding: 16,
-              selectedIndex: _selectedMonth == null ? null : MONTHS.indexOf(_selectedMonth!),
+              selectedIndex: _selectedMonth == null ? null : months.indexOf(_selectedMonth!),
               children: [
-                for (final month in MONTHS)
+                for (final month in months)
                   Semantics(
                     selected: _selectedMonth == month,
                     button: true,

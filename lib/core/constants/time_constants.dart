@@ -1,4 +1,4 @@
-final MONTHS = [
+final months = [
   'January',
   'Feburary',
   'March',
